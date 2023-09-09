@@ -6,7 +6,7 @@
 /*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 20:28:54 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 20:07:58 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/09 20:06:57 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	main(void)
 	*dog3 = *dog1;
 	*cat3 = *cat1;
 	Animal *animals[6] = {dog1, dog2, dog3, cat1, cat2, cat3};
+	// Animal *tmp = new Animal();
 	
 	animals[0]->setIdea("I am a dog1");
 	animals[1]->setIdea("I am a dog2");
@@ -48,8 +49,4 @@ int	main(void)
 	
 	for (int i = 0; i < 6; i++)
 		delete animals[i];
-
-	Animal *tmp = new Animal("Animal");
-	std::cout << tmp->getType() << std::endl;
-	delete tmp;
 }

@@ -6,7 +6,7 @@
 /*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 20:28:54 by soma              #+#    #+#             */
-/*   Updated: 2023/09/07 22:01:24 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/09 20:12:59 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 int	main(void)
 {
-	Dog		*dog = new Dog();
-	Cat		*cat = new Cat();
-	Animal	*animal = new Animal();
+	Animal		*dog = new Dog();
+	Animal		*cat = new Cat();
+	Animal		*animal = new Animal();
 	
 	std::cout << dog->getType() << " " << std::endl;
 	std::cout << cat->getType() << " " << std::endl;

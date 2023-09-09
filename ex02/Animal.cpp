@@ -6,7 +6,7 @@
 /*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:37:37 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 20:08:46 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/09 18:16:08 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,21 +40,11 @@ Animal & Animal::operator=(Animal const & rhs) {
 	return (*this);
 }
 
-void    Animal::makeSound(void) const {
+void Animal::makeSound() const{
 	std::cout << "Animal sound" << std::endl;
 	return ;
 }
 
-std::string     Animal::getType(void) const {
+std::string     Animal::getType(void) const{
 	return (this->_type);
-}
-
-
-void	Animal::outPutIdea(void) const {
-	return ;
-}
-
-void	Animal::setIdea(std::string idea) {
-	idea = "";
-	return ;
 }

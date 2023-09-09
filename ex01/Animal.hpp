@@ -6,7 +6,7 @@
 /*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:37:32 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 17:53:04 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/09 20:16:13 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ class Animal
 		Animal & operator=(Animal const & rhs);
 
 		virtual void    makeSound(void) const;
-		virtual void	setIdea(std::string idea) = 0;
-		virtual void	outPutIdea(void) const = 0;
-		std::string     getType(void) const;
+		virtual void	setIdea(std::string idea);
+		virtual void	outPutIdea(void) const;
+		virtual std::string     getType(void) const;
 
 	protected:
 		std::string     _type;
