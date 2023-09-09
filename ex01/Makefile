@@ -3,7 +3,9 @@ NAME = a.out
 SRCS = main.cpp \
 		Dog.cpp \
 		Cat.cpp \
-		Animal.cpp
+		Brain.cpp \
+		Animal.cpp 
+
 
 OBJS_DIR = objs/
 
@@ -33,3 +35,5 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+debug: re
