@@ -17,6 +17,12 @@ ifeq ($(MAKECMDGOALS), debug)
 CXXFLAGS += -fsanitize=address -fno-omit-frame-pointer -g
 endif
 
+ifeq ($(MAKECMDGOALS), wrong)
+SRCS = Wrongmain.cpp \
+		WrongCat.cpp \
+		WrongAnimal.cpp
+endif
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
@@ -35,3 +41,5 @@ fclean: clean
 re: fclean all
 
 debug: re 
+
+wrong: re
