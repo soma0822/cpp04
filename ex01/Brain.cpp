@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 13:40:14 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 15:44:58 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 11:49:13 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Brain::Brain(void)
 {
-	this->_idea = new std::string[100];
+	this->_ideas = new std::string[100];
 	std::cout << "Brain constructor called" << std::endl;
 	return ;
 }
@@ -27,7 +27,7 @@ Brain::Brain(Brain const & rhs)
 
 Brain::~Brain(void)
 {
-	delete [] this->_idea;
+	delete [] this->_ideas;
 	std::cout << "Brain destructor called" << std::endl;
 	return ;
 }
@@ -36,7 +36,7 @@ Brain & Brain::operator=(Brain const & rhs)
 {
 	if (this != &rhs)
 	{
-		this->_idea = new std::string[100];
+		this->_ideas = new std::string[100];
 	}
 	return (*this);
 }
@@ -45,9 +45,9 @@ void		Brain::outPutIdea(void) const
 {
 	for (int i = 0; i < 100; i++)
 	{
-		if (this->_idea[i] == "")
+		if (this->_ideas[i] == "")
 			break ;
-		std::cout << this->_idea[i] << std::endl;
+		std::cout << this->_ideas[i] << std::endl;
 	}
 }
 
@@ -57,14 +57,14 @@ void		Brain::setIdea(std::string idea)
 	
 	while ( i < 100)
 	{
-		if (this->_idea[i] == "")
+		if (this->_ideas[i] == "")
 		{
-			this->_idea[i] = idea;
+			this->_ideas[i] = idea;
 			break ;
 		}
 		i++;
 	}
 	
-	this->_idea[i] = idea;
+	this->_ideas[i] = idea;
 	return ;
 }

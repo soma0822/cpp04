@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 13:39:42 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 15:43:43 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 11:50:07 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Brain
 		void		setIdea(std::string idea);
 
 	private:
-		std::string		*_idea;
+		std::string		*_ideas;
 
 };
 
