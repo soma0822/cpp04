@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:49:43 by soma              #+#    #+#             */
-/*   Updated: 2023/09/07 21:59:33 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 11:08:13 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Cat & Cat::operator=(Cat const & rhs) {
 }
 
 void    Cat::makeSound(void) const {
-	std::cout << "Meow" << std::endl;
+	std::cout << RED << "Meow" << RESET << std::endl;
 	return ;
 }
 

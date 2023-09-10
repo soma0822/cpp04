@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:44:35 by soma              #+#    #+#             */
-/*   Updated: 2023/09/07 21:47:48 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 11:09:08 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Dog & Dog::operator=(Dog const & rhs) {
 }
 
 void    Dog::makeSound(void) const {
-	std::cout << "Woof" << std::endl;
+	std::cout << GREEN << "Woof" << RESET << std::endl;
 	return ;
 }
 

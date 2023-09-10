@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:37:37 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 20:11:15 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 11:09:47 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ Animal & Animal::operator=(Animal const & rhs) {
 }
 
 void    Animal::makeSound(void) const {
-	std::cout << "Animal sound" << std::endl;
+	std::cout << YELLOW << "Animal sound" << RESET << std::endl;
 	return ;
 }
 
