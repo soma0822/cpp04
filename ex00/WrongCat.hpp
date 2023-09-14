@@ -6,7 +6,7 @@
 /*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 11:13:30 by sinagaki          #+#    #+#             */
-/*   Updated: 2023/09/10 11:25:26 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/10 14:14:09 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,7 @@ class WrongCat :public WrongAnimal
 		void    makeSound(void) const;
 		std::string     getType(void) const;
 
-	protected:
-		std::string     _type;
-
+	private:
 };
 
 #endif

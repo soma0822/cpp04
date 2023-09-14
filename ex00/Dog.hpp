@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:44:38 by soma              #+#    #+#             */
-/*   Updated: 2023/09/07 21:56:52 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 14:14:03 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,7 @@ class Dog : public Animal
 		virtual void    makeSound(void) const;
 		std::string     getType(void) const;
 
-	protected:
-		std::string     _type;
-
+	private:
 };
 
 #endif
