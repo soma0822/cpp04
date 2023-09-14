@@ -6,7 +6,7 @@
 /*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 13:39:42 by soma              #+#    #+#             */
-/*   Updated: 2023/09/10 11:49:02 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/10 14:14:48 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Brain
 		void		setIdea(std::string idea);
 
 	private:
-		std::string		*_ideas;
+		std::string		_ideas[100];
 
 };
 

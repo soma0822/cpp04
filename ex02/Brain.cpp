@@ -6,7 +6,7 @@
 /*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 13:40:14 by soma              #+#    #+#             */
-/*   Updated: 2023/09/10 11:50:14 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/14 20:41:44 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 Brain::Brain(void)
 {
-	this->_ideas = new std::string[100];
 	std::cout << "Brain constructor called" << std::endl;
 	return ;
 }
@@ -27,17 +26,13 @@ Brain::Brain(Brain const & rhs)
 
 Brain::~Brain(void)
 {
-	delete [] this->_ideas;
 	std::cout << "Brain destructor called" << std::endl;
 	return ;
 }
 
 Brain & Brain::operator=(Brain const & rhs)
 {
-	if (this != &rhs)
-	{
-		this->_ideas = new std::string[100];
-	}
+	(void)rhs;
 	return (*this);
 }
 

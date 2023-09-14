@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:50:12 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 16:59:24 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 14:14:13 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ class Cat :public Animal
 		void			outPutIdea(void) const;
 		void			setIdea(std::string idea);
 
-	protected:
-		std::string     _type;
+	private:
 		Brain			*_brain;
 
 };

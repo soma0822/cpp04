@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:44:38 by soma              #+#    #+#             */
-/*   Updated: 2023/09/09 15:43:35 by soma             ###   ########.fr       */
+/*   Updated: 2023/09/10 14:14:17 by sinagaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ class Dog : public Animal
 		void			setIdea(std::string idea);
 
 	private:
-		std::string     _type;
 		Brain			*_brain;
 
 };
