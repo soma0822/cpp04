@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:44:35 by soma              #+#    #+#             */
-/*   Updated: 2023/09/14 20:39:18 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:04:32 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ Dog::Dog(Dog const & rhs) {
 	try
 	{
 		this->_brain = new Brain();
+		*this->_brain = *rhs._brain;
 	}
 	catch(const std::exception& e)
 	{
@@ -57,6 +58,7 @@ Dog & Dog::operator=(Dog const & rhs) {
 		try
 		{
 			this->_brain = new Brain();
+			*this->_brain = *rhs._brain;
 		}
 		catch(const std::exception& e)
 		{

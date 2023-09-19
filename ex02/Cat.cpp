@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:49:43 by soma              #+#    #+#             */
-/*   Updated: 2023/09/14 20:39:00 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:04:56 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,17 @@ Cat::Cat(void) : Animal() {
 
 Cat::Cat(Cat const & rhs) {
 	std::cout << "Cat copy constructor called" << std::endl;
-	*this = rhs;
+	this->_type = rhs.getType();
+	try
+	{
+		this->_brain = new Brain();
+		*this->_brain = *rhs._brain;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+		exit(1);
+	}
 	return ;
 }
 
@@ -48,6 +58,7 @@ Cat & Cat::operator=(Cat const & rhs) {
 		try
 		{
 			this->_brain = new Brain();
+			*this->_brain = *rhs._brain;
 		}
 		catch(const std::exception& e)
 		{
