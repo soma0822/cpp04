@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 13:40:14 by soma              #+#    #+#             */
-/*   Updated: 2023/09/14 20:44:13 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:04:44 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,24 @@
 Brain::Brain(void)
 {
 	std::cout << "Brain constructor called" << std::endl;
-	return ;
 }
 
 Brain::Brain(Brain const & rhs)
 {
 	*this = rhs;
-	return ;
 }
 
 Brain::~Brain(void)
 {
 	std::cout << "Brain destructor called" << std::endl;
-	return ;
 }
 
 Brain & Brain::operator=(Brain const & rhs)
 {
-	(void)rhs;
+	for (int i =0; rhs._ideas[i] != ""; i++)
+	{
+		this->_ideas[i] = rhs._ideas[i];
+	}
 	return (*this);
 }
 
@@ -50,7 +50,7 @@ void		Brain::setIdea(std::string idea)
 {
 	int i = 0;
 	
-	while ( i < 100)
+	while (i < 100)
 	{
 		if (this->_ideas[i] == "")
 		{
@@ -59,7 +59,4 @@ void		Brain::setIdea(std::string idea)
 		}
 		i++;
 	}
-	
-	this->_ideas[i] = idea;
-	return ;
 }

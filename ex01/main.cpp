@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 20:28:54 by soma              #+#    #+#             */
-/*   Updated: 2023/09/14 20:44:28 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:05:28 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ int	main(void)
 		Cat		*cat1 = new Cat();
 		Cat		*cat2 = new Cat(*cat1);
 		Cat		*cat3 = new Cat();
-		*dog3 = *dog1;
 		*cat3 = *cat1;
 		Animal *animals[6] = {dog1, dog2, dog3, cat1, cat2, cat3};
 		
 		animals[0]->setIdea("I am a dog1");
 		animals[1]->setIdea("I am a dog2");
+		*dog3 = *dog1;
 		animals[2]->setIdea("I am a dog3");
 		std::cout << RED;
 		animals[0]->outPutIdea();

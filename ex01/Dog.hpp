@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinagaki <sinagaki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: soma <soma@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 21:44:38 by soma              #+#    #+#             */
-/*   Updated: 2023/09/10 14:14:17 by sinagaki         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:03:45 by soma             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ class Dog : public Animal
 
 	private:
 		Brain			*_brain;
-
 };
 
 #endif
